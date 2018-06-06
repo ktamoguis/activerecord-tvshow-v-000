@@ -14,7 +14,7 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     highest_rating = Show.maximum("rating")
     #Show.where(rating: highest_rating).to_hash
-    Show.find_by(rating: highest_rting)
+    Show.find_by(rating: highest_rating)
   end
 
 end
